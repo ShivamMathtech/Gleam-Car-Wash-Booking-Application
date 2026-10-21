@@ -1,0 +1,26 @@
+{
+  "name": "gleam-car-wash",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A complete coral-themed car wash booking application with a React frontend and SQLite-backed Node.js API.",
+  "engines": {
+    "node": ">=24.0.0 <27"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "start": "node server/index.mjs",
+    "test": "node --test --test-concurrency=1 tests/integration.test.mjs",
+    "check": "node --check server/index.mjs && node --check server/app.mjs && node --check server/db.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "lucide-react": "1.60.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.4"
+  }
+}
